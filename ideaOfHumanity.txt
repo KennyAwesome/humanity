@@ -1,16 +1,12 @@
 Q: What is the "idea of humanity"?
 
-A: "voice recorder" is an application on device,
+A: I (Index Nr. 1) define "humanity" as an idea which connects one human to another human.
+To be specific: "Humanity" is the instatiation of "Voice of Humanity".
+The "Voice of Humanity" is to be implented with two human being agreeing on the "idea of humanity".
+A "voice recorder" is an application on device,
 which is capable of TTS (text to speech recognition) and transmit the content to a server.
 This functionality need to be used to record two humans agreeing to this "idea of humanity" on a single "voice recorder".
-
-I, Index Nr. 1 , define "humanity" as an idea which connects one human to another human.
-To be specific: "Humanity" is the instatiation of "Voice of Humanity".
-The "Voice of Humanity" is to be implented with two human being agreeing on the "idea of humanity",
-continuously recording within a voice recognizable area, who are recording to prove that "humanity" exists.
-The "Voice of Humanity" will be streaming 24/7/365 online,
-to provide access for every member of humanity at all times.
-The "Voice of Humanity" will be recorded and transmitted by the "Voice Recorder of Humanity", which is an internet capable voice recorder and transmitter, running all the software necessary to propery operate the "Voice of Humanity". It will be a linux-based 64-bit device, because in the year 2038 (19th of January) 32-bit based devices will cease to work and I (Index Nr. 1) need humanity beyond this moment of time.
+The operators of the "Voice of Humanity" will ontinuously recording and streaming 24/7/365 online within that voice recognizable area to prove that "humanity" exists and to provide access for every member of humanity at all times.
 
 Once the "Voice of Humanity" has been able to successfully operate for a month, a linux timestamp will appear here: []
 Until then, it is fact, that there was no record of the existence of humanity.
