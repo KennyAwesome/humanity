@@ -1,2 +1,3 @@
 # humanity
-Using all of this resources on this repo implies your agreement on the idea of humanity
+This is an art project related to this following art project:
+https://github.com/KennyAwesome/OnTheWayTo.Pro
