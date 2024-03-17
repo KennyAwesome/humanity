@@ -72,3 +72,7 @@ ________
 MISC:
 - Knowledge Base:
 - decentralized webhosting:
+	- Decentral Open source code base: https://radicle.xyz/
+	- Decentral Domain: https://unstoppabledomains.com
+	- Decentral Storage: https://www.ethswarm.org/
+	- Decentral webhosting: https://ipfs.tech/
