@@ -61,12 +61,26 @@ a thread with a topic can be started.
 ________
 
 Principles of the moderator bot:
-  - Difficult to formulate that way. 
+  - If moderator bot removes a comment, that removed comment need to be:
+	- publically avaiable
+	- the author can request it to be reviewed by a member of the channel if falsely removed
+  - A comment needs to:
+	- refer to a verified knowledge base entry
+	- comply to the publication policy
 
+________
+Publication Policy:
+ - Be kind, speak truthfully, say useful things.
 ________
 
 Failsafe mechanisms:
-- Retry.xD
+- Human Representative.
+- That human representative can request a predefined volunteer of a channel as expert to be present at congress.
+- Decentralization of the system.
+- System can be accessed with ad hoc mesh network off grid (meshtastic)
+- Human moderators supervise AI moderators
+- Corrupt representative can be deelected by the citizens swiftly.
+
 ________
 
 MISC:
@@ -76,3 +90,10 @@ MISC:
 	- Decentral Domain: https://unstoppabledomains.com
 	- Decentral Storage: https://www.ethswarm.org/
 	- Decentral webhosting: https://ipfs.tech/
+____________
+Known yet unsolved problems:
+- How to verify entries into the knowledge base (Writing history problem)
+- What to do, if the system is inaccessible for some reason? (Coup d'etat problem)
+- Organized Radicalist group with bad intentions creates a fake majority (Radicalist problem)
+- Moderator doesn't work as expected (Skynet Probelm)
+- Fake accounts with bots escalates discussion (bot war problem)
