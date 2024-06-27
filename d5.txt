@@ -106,5 +106,6 @@ __________
 Solved Problems:
 - What to do, if the system is inaccessible for some reason? (Coup d'etat problem) -> Decentralation (Offline First Principle)
 - Organized Radicalist group with bad intentions creates a fake majority (Radicalist problem) -> Black list on Etherum Smart Contract (Black Listing Process needs to be defined)
-- Prioritization of Nodes Problem If filecoin is used, the each nodes needs to donate the filecoin back to the account of the "main" node, which address will be documented in the etherum smart contract.
+- Prioritization of Nodes Problem If filecoin is used, the each nodes needs to donate the filecoin back to the account of the "main" node or so called "bootstrap" node,
+which address will be documented in the etherum smart contract.
 - Fake accounts problem (Verification of nodes can be done by main node of local government)
