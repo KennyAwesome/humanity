@@ -100,6 +100,7 @@ Known yet unsolved problems:
 		- only an expert human can verify, but it means that it will be a bottleneck
 	- Black List Problem: Ethical, Practical
 	- Bot war Problm (Moderator Bot doesn't work as expected and goes rogue)
+- Single instance problem: It is adviced to have a backup device. But having a backup device can cause syncronization issues. Need to think more about it.
 
 
 __________
