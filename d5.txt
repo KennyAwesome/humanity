@@ -90,10 +90,18 @@ MISC:
 	- Decentral Domain: https://unstoppabledomains.com
 	- Decentral Storage: https://www.ethswarm.org/
 	- Decentral webhosting: https://ipfs.tech/
+	- Decentral Storage:  "proof of spacetime" https://spec.filecoin.io/
+	- Etherum Smart Contract for most important information, needs to be funded
 ____________
 Known yet unsolved problems:
-- How to verify entries into the knowledge base (Writing history problem)
-- What to do, if the system is inaccessible for some reason? (Coup d'etat problem)
-- Organized Radicalist group with bad intentions creates a fake majority (Radicalist problem)
-- Moderator doesn't work as expected (Skynet Probelm)
-- Fake accounts with bots escalates discussion (bot war problem)
+- How to verify entries into the knowledge base
+	- Writing history through corrupt historians problem
+	- Black List Problem
+	- bot war Probelm (Moderator Bot doesn't work as expected )
+- Fake accounts problem (Decentral Verification with rights to vote conflicts with most current constitution of current democracies)
+
+
+__________
+Solved Problems:
+- What to do, if the system is inaccessible for some reason? (Coup d'etat problem) -> Decentralation (Offline First Principle)
+- Organized Radicalist group with bad intentions creates a fake majority (Radicalist problem) -> Black list on Etherum Smart Contract (Black Listing Process needs to be defined)
