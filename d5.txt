@@ -92,17 +92,19 @@ MISC:
 	- Decentral webhosting: https://ipfs.tech/
 	- Decentral Storage:  "proof of spacetime" https://spec.filecoin.io/
 	- Etherum Smart Contract for most important information, needs to be funded
+
 ____________
 Known yet unsolved problems:
 - How to verify entries into the knowledge base
 	- Writing history through corrupt historians problem
-	- Black List Problem
-	- bot war Probelm (Moderator Bot doesn't work as expected )
-- Fake accounts problem (Decentral Verification with rights to vote conflicts with most current constitution of current democracies)
-- Prioritization of Nodes Problem If filecoin is used, the each nodes needs to donate the filecoin back to the account of the "main" node, which address will be documented in the etherum smart contract.
+		- only an expert human can verify, but it means that it will be a bottleneck
+	- Black List Problem: Ethical, Practical
+	- Bot war Problm (Moderator Bot doesn't work as expected and goes rogue)
 
 
 __________
 Solved Problems:
 - What to do, if the system is inaccessible for some reason? (Coup d'etat problem) -> Decentralation (Offline First Principle)
 - Organized Radicalist group with bad intentions creates a fake majority (Radicalist problem) -> Black list on Etherum Smart Contract (Black Listing Process needs to be defined)
+- Prioritization of Nodes Problem If filecoin is used, the each nodes needs to donate the filecoin back to the account of the "main" node, which address will be documented in the etherum smart contract.
+- Fake accounts problem (Verification of nodes can be done by main node of local government)
