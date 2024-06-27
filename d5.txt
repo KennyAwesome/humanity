@@ -99,6 +99,7 @@ Known yet unsolved problems:
 	- Black List Problem
 	- bot war Probelm (Moderator Bot doesn't work as expected )
 - Fake accounts problem (Decentral Verification with rights to vote conflicts with most current constitution of current democracies)
+- Prioritization of Nodes Problem If filecoin is used, the each nodes needs to donate the filecoin back to the account of the "main" node, which address will be documented in the etherum smart contract.
 
 
 __________
