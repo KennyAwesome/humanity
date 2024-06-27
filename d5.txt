@@ -90,7 +90,9 @@ MISC:
 	- Decentral Domain: https://unstoppabledomains.com
 	- Decentral Storage: https://www.ethswarm.org/
 	- Decentral webhosting: https://ipfs.tech/
-	- Decentral Storage:  "proof of spacetime" https://spec.filecoin.io/
+	- Decentral Database:  "proof of spacetime"
+		- https://spec.filecoin.io/
+		- https://docs.filecoin.io/builder-cookbook/dapps/decentralized-database
 	- Etherum Smart Contract for most important information, needs to be funded
 
 ____________
