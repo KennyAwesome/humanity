@@ -122,6 +122,7 @@ Known yet unsolved problems:
 	- A pragmatic approach is to limit decentralization to the method of access of the system and storage of the discussion and keep the instance of the moderator bot central.
 - Cheating during knowledge tests:
 	- If the user cheats during tests (or malicious bot), then it could have sufficient knowledge to stay in the thread and propergate false information. Doing it with "trusted" people, has limitation on expertise, time and resources. For most people a test in a booth without electronics would be ideal, but it requires authorized and correct operation of that institution, which is difficult to ensure.
+- Local poll application: People would give up their anonlymity for the verification process of the voting.
 __________
 Solved Problems:
 - What to do, if the system is inaccessible for some reason? (Coup d'etat problem) -> Decentralation (Offline First Principle)
