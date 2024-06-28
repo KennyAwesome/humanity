@@ -12,6 +12,8 @@ Direct democracy is generally difficult to implement because it would require en
 
 Democracy is necessary to avoid fatal errors which could happen, if such systems were fully automated.
 
+The service will be available on https://d5.unstoppable
+
 __________
 
 The D5 requires the following to operate:
@@ -83,16 +85,16 @@ Failsafe mechanisms:
 
 ________
 Current tech stack:
-1. Client-Device: supports Decentral communication Protocol (e.g. Matrix) and the ballot user interface
+1. Client-Device: supports Decentral communication Protocol (e.g. Mastodon)
 
 2. Server:
-2.1 Public Matrix Server with bots whith one channel, where people can request a moderator bot to create and join a channel.
+2.1 Public Server with moderator bots managing an instance of the decentral social media platform (e.g. Mastodon).
 2.2 One Bootstrapping Node for stand alone Filecoin/Lotus with the "main" cryptowallet, which address is stored in a etherum smart contract application.
 2.3 At least two other Bootstrapping Nodes for 2.2, ensuring the operation of the keeping the "main" cryptowallet up to date with the etherum smart contract application.
-2.4 At least three independet server hosting a Filecoin/Lotus full node.
-2.5 At least one load balancable and scalable server hosting the moderator bots, which stores all the information to a append only local lmdb, pushing periodically the change to the Filecoin/Lotus. (Need to evalutate this)
+2.4 At least three independet server hosting a Filecoin/Lotus full node backing up the posts,  which stores all the information to a append only local lmdb, pushing periodically the change to the Filecoin/Lotus. (Need to evalutate this)
 2.6 At least one decentral server where anyone can browse through the channels, which data is periodically pulled directly from Filecoin/Lotus network, running RSS feed server for each channels
-2.7 A ballot mechanism server (there are already projects but with reference to the forum like view of the channel history)
+
+3. Integration of the ballot mechanism of the decentral social media platform (e.g. Mastodon)
 
 ________
 
