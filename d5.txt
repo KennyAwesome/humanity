@@ -3,7 +3,7 @@
 A lot of current govermental functions require still analog bureaucracy, which decreases the speed of processing and wastes valuable resources. 
 A logical conclusion is to provide a webservice, which is digitally accessible either through browser and on a smartphone application.
 
-To minimize the risk of corruption by data manipulation and monopolization, all the data is hosted as a block chain on decentralized servers.
+To minimize the risk of corruption by data manipulation and monopolization, data will be stored on verifiable decentralized web services.
 
 Diversity is difficult to measure and thus to represent, especially for those who are less priviledged.
 By giving access to people, who can have a vote, to the system, they should be able to productively contribute.
