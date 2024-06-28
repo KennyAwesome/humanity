@@ -10,7 +10,7 @@ By giving access to people, who can have a vote, to the system, they should be a
 
 Direct democracy is generally difficult to implement because it would require enourmous human resources to process all information by all citizens. If moderated by bots and other citizens and not only by the governmental bureaucrats there might be enought processing power to let all citizens contribute directly to the final decisions, thus reducing the possiblity of abuse of power by representatives. To be compatible with the current representation based democracy, the announcement of the decisions made by the D5 system will be done by volunteers, saying that if D5 has been elected as the absolute majority, that the changes will be applied as announced.
 
-Democracy is necessary to avoid fatal errors which could happen, if such systems were fully automated.
+Democracy by humans is necessary to avoid fatal errors through full automation.
 
 __________
 
