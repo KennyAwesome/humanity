@@ -12,8 +12,6 @@ Direct democracy is generally difficult to implement because it would require en
 
 Democracy is necessary to avoid fatal errors which could happen, if such systems were fully automated.
 
-The service will be available on https://d5.unstoppable
-
 __________
 
 The D5 requires the following to operate:
@@ -103,7 +101,6 @@ MISC:
 - Knowledge Base:
 - decentralized webhosting:
 	- Decentral Open source code base: https://radicle.xyz/
-	- Decentral Domain: https://unstoppabledomains.com
 	- Decentral Storage: https://www.ethswarm.org/
 	- Decentral webhosting: https://ipfs.tech/
 	- Decentral Database:  "proof of spacetime"
@@ -113,13 +110,17 @@ MISC:
 
 ____________
 Known yet unsolved problems:
-- How to verify entries into the knowledge base
+- Verification process of the knowledge base
 	- Writing history through corrupt historians problem
 		- only an expert human can verify, but it means that it will be a bottleneck
 	- Black List Problem: Ethical, Practical
 	- Bot war Problm (Moderator Bot doesn't work as expected and goes rogue)
-- Single instance problem: It is adviced to have a backup device. But having a backup device can cause syncronization issues. Need to think more about it.
-
+- Decentralization:
+	- Load Balancing to independent P2P instances requires more research
+	- Currently there are decentrally managed domains (e.g. .onion), but there is a need for single point of entry. ("decentral domains" for wallet are not it)
+	- The instance of moderator bot needs to be uncorruptable, but it means centralization.
+	- Verification of code integrity on other nodes is difficult, because at the point it is open source, everyone can modify it, so that it can fake the result of the check, whether the source code was altered.
+	- A pragmatic approach is to limit decentralization to the method of access of the system and storage of the discussion and keep the instance of the moderator bot central.
 
 __________
 Solved Problems:
