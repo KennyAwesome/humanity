@@ -121,7 +121,8 @@ Known yet unsolved problems:
 	- The instance of moderator bot needs to be uncorruptable, but it means centralization.
 	- Verification of code integrity on other nodes is difficult, because at the point it is open source, everyone can modify it, so that it can fake the result of the check, whether the source code was altered.
 	- A pragmatic approach is to limit decentralization to the method of access of the system and storage of the discussion and keep the instance of the moderator bot central.
-
+- Cheating during knowledge tests:
+	- If the user cheats during tests (or malicious bot), then it could have sufficient knowledge to stay in the thread and propergate false information. Doing it with "trusted" people, has limitation on expertise, time and resources. For most people a test in a booth without electronics would be ideal, but it requires authorized and correct operation of that institution, which is difficult to ensure.
 __________
 Solved Problems:
 - What to do, if the system is inaccessible for some reason? (Coup d'etat problem) -> Decentralation (Offline First Principle)
