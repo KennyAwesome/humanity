@@ -33,7 +33,7 @@ The D5 requires the following to operate:
 
 4. Voice Of Huaminty Foundation funding the administrators, operators, moderators, coordinators and the necessary technical infrastructure.
 
-5. Local political party with representatives, who have authorized access to D5 system. So if a decision has been decided, to announce it as soon as possible in the parlament.
+5. Local political party with representatives, who have authorized access to D5 system. So if a decision has been decided, to announce it as soon as possible in the local legislative organ.
 ________
 
 Workflow for a decision:
