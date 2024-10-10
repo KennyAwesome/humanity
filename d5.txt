@@ -55,21 +55,6 @@ Workflow for identifying a specific problem:
 2) The system trys to give an answer using bots, searching in other threads.
 3) If the bot does not find an viable answer or if the citizen is not satisfied with an answer,
 a thread with a topic can be started.
-
-________
-
-Principles of the moderator bot:
-  - If moderator bot removes a comment, that removed comment need to be:
-	- publically avaiable
-	- the author can request it to be reviewed by a member of the channel if falsely removed
-  - A comment needs to:
-	- refer to a verified knowledge base entry
-	- comply to the publication policy
-
-________
-Publication Policy:
-- Be kind, speak truthfully, say useful things.
-- If you recognizse malitious action, report that action actively to the moderators. 
 ________
 
 Failsafe mechanisms:
@@ -168,6 +153,22 @@ which address will be documented in the etherum smart contract. -> Filecoin will
 _____________
 Notes on implementation of the bots:
 1. Code review bot
-2. Moderator bot
+
+
+2. Moderator bot:
+2.1 Principles of the moderator bot:
+  - If moderator bot removes a comment, that removed comment need to be:
+	- publically avaiable
+	- the author can request it to be reviewed by a member of the channel if falsely removed
+  - A comment needs to:
+	- refer to a verified knowledge base entry
+	- comply to the publication policy
+2.2 Publication Policy:
+- Be kind, speak truthfully, say useful things.
+- If you recognizse malitious action, report that action actively to the moderators. 
+
+
 3. Quiz generator bot
+
+
 4. Explainer bot
