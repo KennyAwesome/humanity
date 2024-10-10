@@ -70,15 +70,17 @@ Failsafe mechanisms:
 ________
 Current tech stack:
 1. Client-Device:
-	- hosts a minimal unauthorized node decentral communication protocol for discovering a list of authorized nodes interfacing a centralized server providing access to read only access to channels, which one instance can be chosen by the user.
-	- optional: hosts a minimal unauthorized node Decentral communication Protocol for write access to channels
-	- optional: hosts a minimal authorized node for Decentral communication Protocol write access to ballots
+	- Internet connection with a centralized REST server providing access to read only access to channels.
+	- The instance of the centralizes REST server can be chosen by the user from the official list hosted on the Voice of Humanity foundation.
+	- Optional features because it requires enough computing power for verification of data integregity. If hosted, it can work as a gateway with write access, usually exceeding the capabilities of commonly affordable smartphone:
+		- hosting a minimal unauthorized node decentral communication Protocol with write access to channels
+		- hosting a minimal authorized node for decentral communication Protocol with write access to ballots
 
 2. Server:
 2.1 P2P authorized node as bootstrapping nodes forked custom instance of radicle and  forked custom instance of verizexe (Multiple independent instances desireable)
 2.2 P2P authorized node with radicle like decentral repo hosting source code and also the public data (discussion channels, ballot results, knwoledge base) and private data (Blacklist, each ballot votes) with write access
 2.3 P2P unauthorized node with radicle like decentral repo hosting source code and also the public data (discussion channels, ballot results) and private data (Blacklist, each ballot votes) with only read access
-2.4 P2P authorized node with read only access to public data interfacing a centralized server for quick information access
+2.4 P2P authorized node with read only access to public data interfacing a centralized REST server for quick information access.
 2.5 P2P authorized node with code review bot, verifying request for change and initiating a ballot of the code maintainance team
 2.6 P2P authorized node with with moderator bots responsible for blacklisting nodes for each channels if a malitious intent was recognized, before blacklisting human moderator need to review that malitious action.
 2.7 P2P authorized node for quiz generator, submitting quiz to human verifiers 
