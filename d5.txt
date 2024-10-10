@@ -164,3 +164,10 @@ which address will be documented in the etherum smart contract. -> Filecoin will
 		- 6. If a operator has authorized malicious users over a certain threshold regardless of the intention, the node of that operator will be suspended and that operator will be black listed by the system.
 		- 7. All users authorized by the corrupt operator, will be temporalily be excluded from ballots until reverification.
 		- 8. If that reverification does not happen in time, that user will be permanently blacklisted.
+
+_____________
+Notes on implementation of the bots:
+1. Code review bot
+2. Moderator bot
+3. Quiz generator bot
+4. Explainer bot
