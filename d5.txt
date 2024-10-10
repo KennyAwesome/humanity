@@ -17,7 +17,6 @@ The D5 requires the following to operate:
 1. Users/Citizens with access to the system.
 1.1 Creative and knowledgable citizens, who come up with a solution to a problem and does research whether that solution is actually viable and discusses it with other citizens in a thread.
 1.2 Fast and decisive citizens: Their role is to understand the proposed solutions, compares them and decides as fast as possible which is the one which the most chance or least damage.
-1.3 Representatives: If a decision has been decided, it will be announced as soon as possible in the government if enough representation can happen.
 
 2. Operating Personell:
 2.1. Administrators, who maintain the system. The core system will be open source, so anyone can review the system and improve it. There need to be enought administrators, who can be paid eventhough volunteering is desirable, so bugs can be fixed as soon as possible and the webservice is constantly kept online. Only practive will tell how many people are required, but at least 6 with an 8 hour shift to guarantee 24/7 coverage and one person can be sick.
@@ -33,6 +32,8 @@ The D5 requires the following to operate:
 3.4. Physical location (to send/receive letters, technical support, residence/bureau for personell, etc)
 
 4. Voice Of Huaminty Foundation funding the administrators, operators, moderators, coordinators and the necessary technical infrastructure.
+
+5. Local political party with representatives, who have authorized access to D5 system. So if a decision has been decided, to announce it as soon as possible in the parlament.
 ________
 
 Workflow for a decision:
