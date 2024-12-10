@@ -73,32 +73,50 @@ Current tech stack:
 	- Internet connection with a gateway node providing access to read and request to publish a message.
 	- The gateway node instance can be either selected by the user from the official list hosted on the voice of humanity foundation website or self hosted.
 	- Self Compilable
-	- Request a UUID from the gateway node automatically.
+	- Request a UUID and public encrpytion key automatically.
+	- Sends an encrpyted message with the public key of the authentication node for privacy.
+	- If the publish request was denied by the authorization node, the user gets an two strings. One string contains plain text explaining the reason in human understandable way. The other string containing an encrpyted message containing the original message, UUID of the client application, the UUID of the gateway node, the UUID of the authentication node and the reason why the publish request was denied.
+	- The user has the freedom to send the encrpyted string to the Voice of Humanity foundation for review by human after the verification with altcha. Only messages which can be decrypted by the authorization node will be actually sent for human review.
+	- If then a malicious intent was detected during the human review, that client with the UUID can be black listed.
+	- A client can request permission to vote, after the identitiy of the client has been verified using the API for online identification of local governments.
+
 2. Gateway Node:
-	- Self Compilable, registered in authorization node
+	- Self Compilable, UUID of the gateway node is registered in authorization node
 	- Hosts a REST API to access to the decentralized data and request to publish messages.
-	- Sends publish message request to the authorization node. 
-	- Remembers Client UUID to send thack the result of the publish request.
-	- If the publish request was denied by the auhtorization node, it offers the option to send a review request to the Voice of Humanity foundation for review by human after a verification of being human with altcha.
-	- If then a malicious intent was detected, that client with the UUID can be black listed.
+	- Relays encrpyted publish message request to the authorization node. 
+	- Can be requested for black listing, if many malicious clients activity has been detected.
+
 3. Authorization node.
 	- Can authenticate and blacklist a Gateway node.
 	- Is a encrypted Docker image, and only that image has access to the decentralized key management system.
 	- Regularly automatically recompiles itself from the most recent commit to radicle repo.
+	- All activity requires authorization by the decentral secret management system.
 	- Has an local RAG pipeline with a knowledge base and guard rail system to verify that a new message is not a spam.
 	- If the message is verified, updates the data of the forum/knowledge base.
 	- Provides API to accept pull requests for the source code on redicle repo will be authorized by the maintenance team.
+	- A request to black list a authorization node can be sent to the decentral secret management system by the maintainer of an authorization node.
+	- After the request for black listing has been issued, all activities by that node is suspended until the request has been processed.
+	- After sending one request to black list, that original authentication node is also suspended to prevent one node accusing all others.
+
 4. Decentral secret management system:
 	- Is a dApp fist instantiated and funded by the voice of humanity foundation and acts as a single instance.
 	- It's purpose is to keeps regenerating the credendencials in certain intervals to avoid being brute forced.
 	- The credencials are encrpyted in a file on a virtual disk on a RAM and is not stored anywhere else to avoid being brute forced.
-	- The private key used to encrypt the file with the credencials is also on the temporal ram on a RAM of the decentral private computing cluster and is also regulary regenerated.
-	- After the first instantiation, the system locks out the access to the root system by changing the root password to a random password. And the system keeps changing the root password as well to avoid evil maid attack.
+	- List of credentials to be stored:
+		- All public keys, UUIDs of the client applicaiton, and whether it is blocked, and whether it has permissions to vote.
+		- All public keys and UUIDs of the gateway node, and whether it is blocked
+		- All public keys and UUIDs of the authorization node, and whether it is blocked
+		- The private key private key used to encrypt the file with the credencials is also on the temporal ram on a RAM of the decentral private computing cluster and is also regulary regenerated.
+		- The root password, after the first instantiation, the system locks out the access to the root system by changing the root password to a random password. And the system keeps changing the root password as well to avoid evil maid attack.
+	- Manages votes regarding black listing of authentication nodes.
+
+5. Publically accessible decentral storage for the forum data for discussion, it's operation is funded by the voice of humanity foundation.
 
 ________
 
 
 MISC:
+- Example for online identification API provided by government for voting called "eID" in germany: https://www.personalausweisportal.de/Webs/PA/DE/wirtschaft/diensteanbieter-werden/einsatzmoeglichkeiten/einsatzmoeglichkeiten-node.html
 - Knowledge Base: Knowledge will be mainted as unstructured text from which a Neo4j with GPU acceleration will be generated for a RAG pipeline.
 - decentralized webhosting:
 	- Decentral Open source code base: https://radicle.xyz/
