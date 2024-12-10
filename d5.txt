@@ -79,7 +79,7 @@ Current tech stack:
 	- Hosts a REST API to access to the decentralized data and request to publish messages.
 	- Sends publish message request to the authorization node. 
 	- Remembers Client UUID to send thack the result of the publish request.
-	- If the publish request was denied by the auhtorization node, it offers the optiuon to send a review request to the Voice of Humanity foundation for review by human.
+	- If the publish request was denied by the auhtorization node, it offers the option to send a review request to the Voice of Humanity foundation for review by human after a verification of being human with altcha.
 	- If then a malicious intent was detected, that client with the UUID can be black listed.
 3. Authorization node.
 	- Can authenticate and blacklist a Gateway node.
@@ -118,7 +118,6 @@ Outdated reserach notes:
 
 ____________
 Known yet unsolved problems:
-- Malicious Client attack: Anyone can create a lot of client instances and sends publish requests, which are then denied and then requests to be reviewed by human and thus overflow the capacity of human verification.
 - Verification process of the knowledge base/quiz
 	- Writing history through corrupt historians problem
 	- only an expert human can verify, but it means that it will be a bottleneck
@@ -163,7 +162,8 @@ which address will be documented in the etherum smart contract. -> Filecoin will
 		- 6. If a operator has authorized malicious users over a certain threshold regardless of the intention, the node of that operator will be suspended and that operator will be black listed by the system.
 		- 7. All users authorized by the corrupt operator, will be temporalily be excluded from ballots until reverification.
 		- 8. If that reverification does not happen in time, that user will be permanently blacklisted.
-- Trolling: Daily Rate Limit
+- Trolling: Daily Rate Limit for publish requests
+- Malicious Client attack: Anyone can create a lot of client instances and sends publish requests, which are then denied and then requests to be reviewed by human and thus overflow the capacity of human verification. Solution: Proof of Work with Altcha: https://github.com/altcha-org/altcha
 
 _____________
 Ideas:
