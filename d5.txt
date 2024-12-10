@@ -110,7 +110,7 @@ Current tech stack:
 		- The root password, after the first instantiation, the system locks out the access to the root system by changing the root password to a random password. And the system keeps changing the root password as well to avoid evil maid attack.
 	- Manages votes regarding black listing of authentication nodes.
 
-5. Publically accessible decentral storage for the forum data for discussion, it's operation is funded by the voice of humanity foundation.
+5. Publically accessible decentral storage for the forum data for discussion, it's operation is funded by the voice of humanity foundation. The current laws of each country are mirrored and anyone can publish a comment or specific change for that law but only authenticated with the digital identity issued by that local government of that country can participate in the vote to accept that change.
 
 ________
 
