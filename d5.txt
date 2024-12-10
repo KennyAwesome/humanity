@@ -69,44 +69,56 @@ Failsafe mechanisms:
 
 ________
 Current tech stack:
-1. Client-Device:
-	- Internet connection with a centralized REST server providing access to read only access to channels.
-	- The instance of the centralizes REST server can be chosen by the user from the official list hosted on the Voice of Humanity foundation.
-	- Optional features because it requires enough computing power for verification of data integregity. If hosted, it can work as a gateway with write access, usually exceeding the capabilities of commonly affordable smartphone:
-		- hosting a minimal unauthorized node decentral communication Protocol with write access to channels
-		- hosting a minimal authorized node for decentral communication Protocol with write access to ballots
-
-2. Server:
-2.1 P2P authorized node as bootstrapping nodes forked custom instance of radicle and  forked custom instance of verizexe (Multiple independent instances desireable)
-2.2 P2P authorized node with radicle like decentral repo hosting source code and also the public data (discussion channels, ballot results, knwoledge base) and private data (Blacklist, each ballot votes) with write access
-2.3 P2P unauthorized node with radicle like decentral repo hosting source code and also the public data (discussion channels, ballot results) and private data (Blacklist, each ballot votes) with only read access
-2.4 P2P authorized node with read only access to public data interfacing a centralized REST server for quick information access.
-2.5 P2P authorized node with code review bot, verifying request for change and initiating a ballot of the code maintainance team
-2.6 P2P authorized node with with moderator bots responsible for blacklisting nodes for each channels if a malitious intent was recognized, before blacklisting human moderator need to review that malitious action.
-2.7 P2P authorized node for quiz generator, submitting quiz to human verifiers 
-2.8 P2P authorized node for authorization (of users, operators, domains to centralized server as information source)
-2.9 P2P authorized node for managing "main" cryptowallet managing all the Filecoin/Verizexe-coin, which address is hard coded and the private key is typed in manually by the highest administrator.
+1. Client-Application:
+	- Internet connection with a gateway node providing access to read and request to publish a message.
+	- The gateway node instance can be either selected by the user from the official list hosted on the voice of humanity foundation website or self hosted.
+	- Self Compilable
+	- Request a UUID from the gateway node automatically.
+2. Gateway Node:
+	- Self Compilable, registered in authorization node
+	- Hosts a REST API to access to the decentralized data and request to publish messages.
+	- Sends publish message request to the authorization node. 
+	- Remembers Client UUID to send thack the result of the publish request.
+	- If the publish request was denied by the auhtorization node, it offers the optiuon to send a review request to the Voice of Humanity foundation for review by human.
+	- If then a malicious intent was detected, that client with the UUID can be black listed.
+3. Authorization node.
+	- Can authenticate and blacklist a Gateway node.
+	- Is a encrypted Docker image, and only that image has access to the decentralized key management system.
+	- Regularly automatically recompiles itself from the most recent commit to radicle repo.
+	- Has an local RAG pipeline with a knowledge base and guard rail system to verify that a new message is not a spam.
+	- If the message is verified, updates the data of the forum/knowledge base.
+	- Provides API to accept pull requests for the source code on redicle repo will be authorized by the maintenance team.
+4. Decentral secret management system:
+	- Is a dApp fist instantiated and funded by the voice of humanity foundation and acts as a single instance.
+	- It's purpose is to keeps regenerating the credendencials in certain intervals to avoid being brute forced.
+	- The credencials are encrpyted in a file on a virtual disk on a RAM and is not stored anywhere else to avoid being brute forced.
+	- The private key used to encrypt the file with the credencials is also on the temporal ram on a RAM of the decentral private computing cluster and is also regulary regenerated.
+	- After the first instantiation, the system locks out the access to the root system by changing the root password to a random password. And the system keeps changing the root password as well to avoid evil maid attack.
 
 ________
 
 
 MISC:
-- Knowledge Base:
+- Knowledge Base: Knowledge will be mainted as unstructured text from which a Neo4j with GPU acceleration will be generated for a RAG pipeline.
 - decentralized webhosting:
 	- Decentral Open source code base: https://radicle.xyz/
-	- Decentral private computing: https://github.com/EspressoSystems/veri-zexe
-	
+	- Decentral private computing:
+		- Protocol + Computing power: https://github.com/aleph-im/aleph-vm/tree/main/runtimes/aleph-debian-12-python
+		- Protocol: https://github.com/EspressoSystems/veri-zexe
+	- Decentral Storage for encrypted Docker images: https://ipfs.tech/
+	- Etherum Smart Contract for most important information, needs to be funded
+
+
 Outdated reserach notes:
-	- Decentral Storage: https://www.ethswarm.org/
 	- Decentral webhosting: https://ipfs.tech/
-	- Decentral Database:  "proof of spacetime"
+	- Decentral Database:  "proof of spacetime" -> With dedication, it cann be overrun
 		- https://spec.filecoin.io/
 		- https://docs.filecoin.io/builder-cookbook/dapps/decentralized-database
-	- Etherum Smart Contract for most important information, needs to be funded
 	- Decentral forum: https://join-lemmy.org/docs/introduction.html
 
 ____________
 Known yet unsolved problems:
+- Malicious Client attack: Anyone can create a lot of client instances and sends publish requests, which are then denied and then requests to be reviewed by human and thus overflow the capacity of human verification.
 - Verification process of the knowledge base/quiz
 	- Writing history through corrupt historians problem
 	- only an expert human can verify, but it means that it will be a bottleneck
@@ -151,6 +163,19 @@ which address will be documented in the etherum smart contract. -> Filecoin will
 		- 6. If a operator has authorized malicious users over a certain threshold regardless of the intention, the node of that operator will be suspended and that operator will be black listed by the system.
 		- 7. All users authorized by the corrupt operator, will be temporalily be excluded from ballots until reverification.
 		- 8. If that reverification does not happen in time, that user will be permanently blacklisted.
+- Trolling: Daily Rate Limit
+
+_____________
+Ideas:
+2.1 P2P authorized node as bootstrapping nodes forked custom instance of radicle and  forked custom instance of verizexe (Multiple independent instances desireable)
+2.2 P2P authorized node with radicle like decentral repo hosting source code and also the public data (discussion channels, ballot results, knwoledge base) and private data (Blacklist, each ballot votes) with write access
+2.3 P2P unauthorized node with radicle like decentral repo hosting source code and also the public data (discussion channels, ballot results) and private data (Blacklist, each ballot votes) with only read access
+2.4 P2P authorized node with read only access to public data interfacing a centralized REST server for quick information access.
+2.5 P2P authorized node with code review bot, verifying request for change and initiating a ballot of the code maintainance team
+2.6 P2P authorized node with with moderator bots responsible for blacklisting nodes for each channels if a malitious intent was recognized, before blacklisting human moderator need to review that malitious action.
+2.7 P2P authorized node for quiz generator, submitting quiz to human verifiers 
+2.8 P2P authorized node for authorization (of users, operators, domains to centralized server as information source)
+2.9 P2P authorized node for managing "main" cryptowallet managing all the Filecoin/Verizexe-coin, which address is hard coded and the private key is typed in manually by the highest administrator.
 
 _____________
 Notes on implementation of the bots:
